@@ -15,7 +15,7 @@
 
 export const fetchNews = async (topic) => {
   const response = await fetch(
-    `https://gnews.io/api/v4/search?q=${topic}&sortby=relevance&token=YOUR_API_KEY`
+    `https://gnews.io/api/v4/search?q=${topic}&sortby=relevance&token=3dea4c8757efce4d377da196a2a956db`
   );
   if (!response.ok) {
     throw new Error("Failed to fetch news. Please check your API key or endpoint.");

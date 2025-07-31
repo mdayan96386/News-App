@@ -42,12 +42,12 @@ function WeatherCard() {
     <div
       className={
         theme
-          ? "h-56 p-4 rounded-sm border shadow col-span-1 text-gray-500"
-          : "h-56 p-4 rounded-sm border shadow col-span-1"
+          ? "h-30 p-4 rounded-sm border shadow col-span-1 text-gray-500"
+          : "h-30 p-4 rounded-sm border shadow col-span-1"
       }
     >
       <h1 className="text-xl font-bold my-3">Today's Weather</h1>
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between ">
         <div>
           <h1 className="text-4xl font-bold my-1">
             {weatherData?.current.temp_c}°C
@@ -70,13 +70,13 @@ function WeatherCard() {
       <form className="my-3" onSubmit={handleSubmit}>
         <input
           type="text"
-          className="border w-4/5 p-2 "
+          className="border  p-2 mb-2 w-full "
           placeholder="Enter City Name"
           required
           value={text}
           onChange={(e) => setText(e.target.value)}
         />
-        <button className="bg-green-500 p-2 font-bold text-white">
+        <button className="bg-green-500 p-2 font-bold text-white w-full">
           Search
         </button>
       </form>
